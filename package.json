@@ -4,7 +4,7 @@
   "description": "Projet 4 openclassroom",
   "main": "index.js",
   "scripts": {
-    "test": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch style.scss style.css"
   },
   "author": "Amaury Barbieri",
   "license": "ISC",

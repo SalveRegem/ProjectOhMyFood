@@ -97,6 +97,11 @@ header .localisation_background{
     border-radius: 25px;
     border: none;
 }
+
+.explore button:hover{
+    transform: scale(1.02);
+    opacity: 0.9;
+}
 .fonctionnement{
     display: flex;
     flex-direction:column;
@@ -196,4 +201,3 @@ li i{
 .card h3{
     padding-top: 16px;
 }
-
