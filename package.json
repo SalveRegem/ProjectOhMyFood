@@ -1,11 +1,18 @@
 {
   "name": "projet-sass-package",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projet 4 openclassroom",
   "main": "index.js",
   "scripts": {
     "test": "sass --watch ./sass/main.scss:./public/css/style.css"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Amaury Barbieri",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "(hhtps://github.com/SalveRegem/projet-sass-package.git)"
+  },
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
 }

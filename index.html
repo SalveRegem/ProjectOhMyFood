@@ -4,14 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/80af7d5c4b.js" crossorigin="anonymous"></script>
     <title>OhMyFood</title>
 </head>
 <body>
     <header>
-        <img src="Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="image du logo OhMyFood">
-        <p><i class="fa-solid fa-location-dot"></i>Paris,Belleville</p>
+        <img class="logo" src="Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="image du logo OhMyFood">
+        <p class="localisation_background"><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
     </header>
+    <main>
+        <div class="explore">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <button id="restaurants">Explorer nos restaurants</button>
+        </div>
+        <div class="fonctionnement">
+            <h2>Fonctionnement</h2>
+            <ol>
+                <li><button><i class="fa-solid fa-mobile-screen-button icon_grey"></i>Choississez un restaurant</button></li>
+                <li><button><i class="fa-solid fa-list-ul icon_grey"></i>composez votre menu</button></li>
+                <li><button><i class="fa-solid fa-store icon_purple"></i>Dégustez au restaurant</button></li>
+            </ol>
+        </div>
+        <div class="background_restaurants">
+            <section class="restaurants">
+                <h2>Restaurants</h2>
+                <a href="#">
+                    <article class="card">
+                        <img src="Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                        <div class="card_title">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                            <i class="fa-sharp fa-regular fa-heart"></i>
+                        </div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="card">
+                        <img src="Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                        <div class="card_title">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                            <i class="fa-sharp fa-regular fa-heart"></i>
+                        </div>   
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="card">
+                        <img src="Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                            <div class="card_title">
+                                <h3>à la française</h3>
+                                <p>Cité Rouge</p>
+                                <i class="fa-sharp fa-regular fa-heart"></i>
+                            </div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="card">
+                        <img src="Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                        <div class="card_title">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                            <i class="fa-sharp fa-regular fa-heart"></i>
+                        </div>
+                    </article>
+                </a>
+            </section>
+        </div>
+
+    </main>
 </body>
 </html>
