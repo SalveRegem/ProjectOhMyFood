@@ -45,14 +45,13 @@ header{
 }
 
 
-header img{
+header>img{
     width: 100%;
+    height: 320px;
     object-fit: cover;
+  
 }
 
-.photo_height{
-    height: 380px;
-}
 
 /****main****/
 
@@ -71,8 +70,10 @@ main{
   
 }
 h1{
-    width: 260px;
-    height: 100px;
+    width: 267px;
+    margin-top: 100px;
+    margin-left: 15px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -81,10 +82,6 @@ h1{
     font-weight: 400;
     font-size: 28px;
     font-family: "Shrikhand", cursive;
-}
-
-h3,p{
-    text-overflow: ellipsis;
 }
 
 .title_decoration{
@@ -124,6 +121,7 @@ h3,p{
     content: "";
 }
 
+
 .padding_title{
     padding-top: 40px;
 }
@@ -140,8 +138,9 @@ h3,p{
 .flex_heart i {
     font-size: 25px;
     padding-right: 20px;
+    margin-left: 30px;
     left: 333px;
-    bottom: 40px;
+    bottom: 18px;
     position: absolute;
     box-sizing: border-box;
 }
@@ -163,7 +162,7 @@ h3,p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1179px;
+    height: 1243px;
 }
 
 .card{
@@ -183,7 +182,7 @@ h3,p{
 
 #content{
     padding-top: 15px;
-    padding-left: 20px;
+   padding-left: 15px;
 
 }
 .flex_content{
@@ -209,7 +208,7 @@ button {
     text-align: center;
     width: 218px;
     padding: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 90px;
     margin-top: 35px;
     font-size: 16px;
     font-weight: bold;
@@ -230,14 +229,15 @@ button:hover {
 /***Footer***/
 footer {
     background-color: #353535;
-    height: 200px;
+    height: 220px;
+    margin-top: 46px;
 }
   
   .footer_logo {
     font-family: "Shrikhand", cursive;
     width: 137px;
-    height: 27px;
-    padding: 20px 0 20px 20px;
+    height:35px;
+    padding: 27px 0 20px 20px;
     color: white;
   }
   
@@ -282,6 +282,7 @@ footer {
 
     .card_flex{
         width: 70%;
+        height: 1226px;
         margin-left: 284px;
     }
 
@@ -298,6 +299,10 @@ footer {
         display: flex;
         flex-direction: row-reverse;
         align-items: end;
+    }
+
+    footer div{
+        height: 42px;
     }
 
     .footer_logo{

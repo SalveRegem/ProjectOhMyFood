@@ -87,6 +87,7 @@ header .localisation_background {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   border: none;
+  cursor: pointer;
 }
 
 .explore a{
@@ -239,7 +240,7 @@ span {
 .restaurants .fa-solid {
   color: transparent;
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  -webkit-background-clip: text;
+  background-clip: text;
   opacity: 0;
 }
 
