@@ -213,7 +213,7 @@ header .localisation_background {
   font-size: 14px;
   font-weight: bold;
   /* Button Gradient */
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(356.33deg, #9356DC -45.44%, #FF79DA 127.93%);
   /* Shadow/Button */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
@@ -267,9 +267,7 @@ ol button {
   font-size: 16px;
   font-weight: bold;
   position: relative;
-  /* Background */
   background: #f7f7f7;
-  /* Shadow/Instructions */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 }
@@ -301,14 +299,17 @@ li i {
 
 .fonctionnement span{
   color: white;
-  background-color: purple;
+  background-color: #9356DC;
   width: 1.5rem;
   height: 1.5rem;
+  font-size: 14px;
+  font-weight: 600;
   display: grid;
   place-items: center;
   border-radius: 50%;
   list-style-type: none;
   position: absolute;
+  top: 503px;
   z-index: 1;
   margin: 20px 17px 0 -10px;
 }
@@ -321,8 +322,8 @@ li i {
 }
 
 .background_restaurants h2{
-  margin-top: 60px;
-  margin-left: 35px;
+  margin-top: 50px;
+  margin-left: 45px;
 }
 
 .restaurants {
@@ -502,18 +503,13 @@ footer i {
     width: 350px;
   }
 
-  .background_restaurants{
-    padding-bottom: 0;
-  }
-
   .background_restaurants h2{
-    margin-left: 290px;
+    margin-left: 15%;
   }
   .card{
   width: 560px;
   height: 280px;
   margin-right: 100px;
-  margin-bottom: 43px;
   }
 
   .card img{
