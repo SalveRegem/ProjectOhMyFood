@@ -83,7 +83,14 @@ h1{
     font-family: "Shrikhand", cursive;
 }
 
+.menu h3{
+    font-size: 16px;
+    font-weight: 300;
+    color: #353535;
+}
+
 .flex_content p{
+    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -91,11 +98,11 @@ h1{
 
 .title_decoration{
     position: relative;
-    display: inline-block; /* Header are 100% width by their default block behaviour */
+    display: inline-block; 
 }
 .title_decoration1:before{
     position: absolute;
-    height: 5px;
+    height: 3px;
     width: 58%;
     left: 0;
     bottom: -5px;
@@ -106,7 +113,7 @@ h1{
 
 .title_decoration2:before{
     position: absolute;
-    height: 5px;
+    height: 3px;
     width: 83%;
     left: 0;
     bottom: -5px;
@@ -117,7 +124,7 @@ h1{
 
 .title_decoration3:before{
     position: absolute;
-    height: 5px;
+    height: 3px;
     width: 55%;
     left: 0;
     bottom: -5px;
@@ -196,14 +203,23 @@ h1{
     align-items: start;
     isolation: isolate;
     font-size: 15px;
+}
+
+.card_title p{
+    width: 100%;
+    margin: 0;
+    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    
 }
 
 .euro{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
     padding-right: 15px;
     font-weight: bolder;
+    width: 30%;
    
 }
 
@@ -212,7 +228,7 @@ h1{
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
-    width: 50px;
+    width: 5%;
     height: 29px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -230,7 +246,7 @@ h1{
 }
 
 .card:hover .euro {
-    padding-right: 100px;
+    padding-right: 70px;
 }
 .card:hover .cross {
     opacity: 1;
@@ -245,7 +261,7 @@ button {
     justify-content: center;
     align-self: center;
     text-align: center;
-    width: 218px;
+    width: 190px;
     padding: 18px;
     margin-bottom: 40px;
     margin-top: 35px;
@@ -273,7 +289,9 @@ footer {
   
   .footer_logo {
     font-family: "Shrikhand", cursive;
-    width: 137px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
     height: 27px;
     padding: 20px 0 20px 20px;
     color: white;
@@ -289,6 +307,7 @@ footer {
   
   footer p {
     padding-bottom: 10px;
+    font-weight: bold;
     color: white;
   }
   

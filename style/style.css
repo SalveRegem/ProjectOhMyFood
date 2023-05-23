@@ -15,6 +15,127 @@ body {
   
 }
 
+@keyframes grow {
+  0%, 100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.8);
+    transform: scaleY(1.8);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loader {
+  background: linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  font-family: Shrikhand, sans-serif;
+  font-size: x-large;
+  vertical-align: middle;
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  animation: loader 1s ease-in-out 2s forwards;
+}
+
+.loader__food {
+  vertical-align: middle;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+
+.loader__food span {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  padding-right: 1em;
+}
+
+.loader__fork {
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: rotate 1s linear infinite;
+}
+
+.loader__food span:nth-child(1) {
+  animation: grow 1s ease-in-out infinite;
+}
+
+.loader__food span:nth-child(2) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader__food span:nth-child(3) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader__food span:nth-child(4) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader__food span:nth-child(5) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader__food span:nth-child(6) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader__food span:nth-child(7) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.loader__food span:nth-child(8) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
 /***Header***/
 header {
   display: flex;
@@ -39,6 +160,12 @@ header p {
   font-weight: bold;
   font-size: 16px;
   gap: 13px;
+  color: #353535 ;
+  opacity: 1;
+}
+
+header i{
+  color: #353535;
 }
 
 header .localisation_background {
@@ -64,6 +191,7 @@ header .localisation_background {
   align-self: center;
   text-align: center;
   font-size: 24px;
+  font-weight: 700;
   height: 90px;
   width: 100%;
 }
@@ -74,13 +202,16 @@ header .localisation_background {
   text-align: center;
   font-size: 17px;
   padding: 0 29px 10px 10px;
+  color: #353535;
 }
 
 .explore button {
-  width: 218px;
-  padding: 18px;
+  width: 200px;
+  padding:15px 15px 15px 13px;
   margin-top: 15px;
   color: white;
+  font-size: 14px;
+  font-weight: bold;
   /* Button Gradient */
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   /* Shadow/Button */
@@ -115,6 +246,7 @@ header .localisation_background {
 .fonctionnement h2 {
   margin: 0;
   padding-right: 71px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -150,11 +282,13 @@ li::marker {
   position: absolute;
   border-radius: 10px;
   background-color: #9356DC;
+
 }
 
 li i {
   padding-right: 25px;
   padding-left: 19px;
+  top: 709px;
 }
 
 .icon_grey {
@@ -165,7 +299,7 @@ li i {
   color: #9356DC;
 }
 
-span {
+.fonctionnement span{
   color: white;
   background-color: purple;
   width: 1.5rem;
@@ -187,8 +321,8 @@ span {
 }
 
 .background_restaurants h2{
-  margin-top: 50px;
-  margin-left: 45px;
+  margin-top: 60px;
+  margin-left: 35px;
 }
 
 .restaurants {
@@ -196,8 +330,8 @@ span {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding-top: 50px;
+  
+  padding-top: 20px;
 }
 
 .restaurants img {
@@ -219,6 +353,7 @@ span {
   border-radius: 15px;
   background-color: #ffffff;
   margin-left: 7px;
+  margin-bottom: 15px;
   color: black;
 }
 
@@ -235,8 +370,8 @@ span {
   position: absolute;
   width: 80px;
   right: 0px;
-  top: 29.5px;
-  left: 235px;
+  top: 13.5px;
+  left: 246px;
   background: #99E2D0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 2px; 
@@ -253,7 +388,7 @@ span {
 }
 
 .flex_heart i {
-  font-size: 20px;
+  font-size: 30px;
   padding-right: 20px;
   left: 300px;
   bottom: 10px;
@@ -289,6 +424,10 @@ span {
   padding-top: 16px;
 }
 
+.card_title p{
+  margin-top: 5px;
+}
+
 /***Footer***/
 footer {
   background-color: #353535;
@@ -315,6 +454,7 @@ footer {
 footer p {
   padding-bottom: 10px;
   color: white;
+  font-weight: bold;
 }
 
 footer i {
@@ -328,6 +468,17 @@ footer i {
 
 /*****Responsive laptop*****/
 @media  all and (min-width: 1080px) and (max-width: 1920px){
+
+
+    .loader__food {
+      top: 40%;
+      left: 35%;
+    }
+  
+    .loader__food {
+      top: 40%;
+      left: 45%;
+    }
   
   .fonctionnement{
     flex-basis: 200px;
@@ -343,8 +494,16 @@ footer i {
     padding-left:145px ;
   }
 
+  .fonctionnement span{
+    top: 502px;
+  }
+
   ol button{
     width: 350px;
+  }
+
+  .background_restaurants{
+    padding-bottom: 0;
   }
 
   .background_restaurants h2{
@@ -354,6 +513,7 @@ footer i {
   width: 560px;
   height: 280px;
   margin-right: 100px;
+  margin-bottom: 43px;
   }
 
   .card img{
@@ -364,7 +524,7 @@ footer i {
   }
 
   .new_restaurant{
-    left: 452px;
+    left: 463px;
+    top: 13.5px;
   }
-
 }
