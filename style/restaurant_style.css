@@ -217,9 +217,9 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: end;
-    padding-right: 15px;
+    margin-right: 10px;
     font-weight: bolder;
-    width: 30%;
+    width: 23%;
    
 }
 
@@ -246,7 +246,7 @@ h1{
 }
 
 .card:hover .euro {
-    padding-right: 70px;
+    margin-right: 63px;
 }
 .card:hover .cross {
     opacity: 1;

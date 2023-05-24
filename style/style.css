@@ -264,6 +264,7 @@ ol button {
   width: 322.49px;
   padding: 27px;
   border: none;
+  position: relative;
   font-size: 16px;
   font-weight: bold;
   position: relative;
@@ -274,19 +275,12 @@ ol button {
 
 li {
   margin: 30px 0 0 0;
-}
-
-li::marker {
-  position: absolute;
-  border-radius: 10px;
-  background-color: #9356DC;
-
+  position: relative;
 }
 
 li i {
   padding-right: 25px;
   padding-left: 19px;
-  top: 709px;
 }
 
 .icon_grey {
@@ -300,6 +294,7 @@ li i {
 .fonctionnement span{
   color: white;
   background-color: #9356DC;
+  position: absolute;
   width: 1.5rem;
   height: 1.5rem;
   font-size: 14px;
@@ -309,9 +304,9 @@ li i {
   border-radius: 50%;
   list-style-type: none;
   position: absolute;
-  top: 503px;
+  top: 24px;
+  left: -12px;
   z-index: 1;
-  margin: 20px 17px 0 -10px;
 }
 
 .background_restaurants {
