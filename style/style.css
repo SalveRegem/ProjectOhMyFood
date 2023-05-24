@@ -490,9 +490,6 @@ footer i {
     padding-left:145px ;
   }
 
-  .fonctionnement span{
-    top: 502px;
-  }
 
   ol button{
     width: 350px;
@@ -518,4 +515,29 @@ footer i {
     left: 463px;
     top: 13.5px;
   }
+  footer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+}
+
+.footer_logo{
+    padding-right: 60px;
+}
+footer h2{
+    margin-left: 45px;
+}
+
+.footer_margin_left{
+    margin-left: 25px;
+}
+
+.flex_footer{
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer_margin_left{
+  margin-left: 50px;
+}
 }

@@ -337,6 +337,10 @@ footer {
         margin-right: 15px;
     }
 
+    .card:hover .euro {
+        margin-right: 85px;
+    }
+
     .flex_heart{
         margin-left: 50px;
     }
@@ -369,11 +373,12 @@ footer {
     }
 
     .footer_margin_left{
-        margin-left: 25px;
+        margin-left: 50px;
     }
 
     .flex_footer{
         flex-direction: row;
         gap: 10px;
     }
+
 }
