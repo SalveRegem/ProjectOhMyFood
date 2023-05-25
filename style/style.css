@@ -326,7 +326,6 @@ li i {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
   padding-top: 20px;
 }
 
@@ -459,6 +458,10 @@ footer i {
   padding-right: 15px;
 }
 
+footer a{
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */
 
 
@@ -495,8 +498,13 @@ footer i {
     width: 350px;
   }
 
+  .background_restaurants{
+    padding-left: 70px;
+  }
+
   .background_restaurants h2{
-    margin-left: 15%;
+    margin-left: 8%;
+    padding-left: 120px;
   }
   .card{
   width: 560px;

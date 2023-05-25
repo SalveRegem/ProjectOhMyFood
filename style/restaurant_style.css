@@ -317,6 +317,10 @@ footer {
     padding-right: 15px;
   }
 
+  footer a{
+    text-decoration: none;
+  }
+
 
 /*****Responsive laptop*****/
 @media  all and (min-width: 1080px) and (max-width: 1920px) {
