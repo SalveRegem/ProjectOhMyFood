@@ -202,10 +202,19 @@ header .localisation_background {
   text-align: center;
   font-size: 17px;
   padding: 0 29px 10px 10px;
+  margin-bottom: 55px;
   color: #353535;
 }
 
-.explore button {
+.explore button{
+  background: none;
+  border: none;
+}
+
+
+.explore a {
+  display: flex;
+  justify-self: center;
   width: 200px;
   padding:15px 15px 15px 13px;
   margin-top: 15px;
@@ -219,15 +228,10 @@ header .localisation_background {
   border-radius: 25px;
   border: none;
   cursor: pointer;
+  display: inline;
+  text-decoration: none;
 }
 
-.explore a{
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
-}
 
 .explore button:hover {
   transform: scale(1.02);
